@@ -4,7 +4,7 @@ To automate the stuff download the setup.sh file from drive link https://bit.ly/
 
 Give executable permissions to the downloaded file.
 
-```shell script
+```sh
 chmod +x setup.sh
 ./setup.sh
 ```
@@ -16,7 +16,7 @@ The sample.wav file is provided in the root directory of the repository.
 
 To test run from the root directory.
 
-```shell script
+```sh
 python main.py
 ```
 
