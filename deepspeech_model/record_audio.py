@@ -15,7 +15,7 @@ except ImportError:
 
 class RecordOrRead:
     SAMPLE_RATE = 16000  # Sample rate
-    duration = 5  # seconds
+    duration = 3  # seconds
     file_path = None
 
     def __init__(self, file_path=None):
@@ -29,7 +29,7 @@ class RecordOrRead:
                 print(
                     'Warning: original sample rate ({}) is different than {}hz. Resampling might produce erratic '
                     'speech recognition.'.format(frame_rate, self.SAMPLE_RATE), file=sys.stderr)
-                frame_rate, audio = self.convert_samplerate()
+                audio = self.convert_samplerate()
             else:
                 audio = np.frombuffer(fin.readframes(fin.getnframes()), np.int16)
             audio_length = fin.getnframes() * (1 / self.SAMPLE_RATE)
@@ -51,4 +51,6 @@ class RecordOrRead:
         except OSError as e:
             raise OSError(e.errno, 'SoX not found, use {}hz files or install it: {}'.format(self.SAMPLE_RATE, e.strerror))
 
-        return self.SAMPLE_RATE, np.frombuffer(output, np.int16)
+        return np.frombuffer(output, np.int16)
+
+
