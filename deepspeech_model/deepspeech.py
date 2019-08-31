@@ -51,10 +51,8 @@ class SpeechToText:
         inference_start = timer()
         if c.extended:
             text = metadata_to_string(self.model.sttWithMetadata(audio, fs))
-            print(text)
         else:
             text = self.model.stt(audio, fs)
-            print(text)
         inference_end = timer() - inference_start
         print('Inference took %0.3fs' % inference_end, file=sys.stderr)
         return text
