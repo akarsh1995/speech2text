@@ -25,7 +25,7 @@ class Config:
     N_CONTEXT = 9
 
     model = os.path.join(model_dir, 'output_graph.pbmm')
-    alphabet = os.path.join(model_dir, 'models/alphabet.txt')
-    lm = os.path.join(model_dir, '/lm.binary')
+    alphabet = os.path.join(model_dir, 'alphabet.txt')
+    lm = os.path.join(model_dir, 'lm.binary')
     trie = os.path.join(model_dir, 'trie')
     extended = False

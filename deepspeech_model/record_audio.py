@@ -36,8 +36,10 @@ class RecordOrRead:
         return audio
 
     def record_audio(self):
+        print('recording the audio.')
         my_recording = sd.rec(int(self.duration * self.SAMPLE_RATE), samplerate=self.SAMPLE_RATE, channels=1)
         sd.wait()
+        print('recording finished.')
         return my_recording
 
     def convert_samplerate(self):
@@ -52,5 +54,3 @@ class RecordOrRead:
             raise OSError(e.errno, 'SoX not found, use {}hz files or install it: {}'.format(self.SAMPLE_RATE, e.strerror))
 
         return np.frombuffer(output, np.int16)
-
-
