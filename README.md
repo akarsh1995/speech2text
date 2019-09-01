@@ -35,7 +35,12 @@ Inference took 14.607s
 not gently but wake her now the news struck doubt into the restless minds once we stood beside the shore a chunk in the wall allowed a draft to blow fastened two pins on each side the cold dip restores health and zest he takes the oath of office each march the sand drifts over the sill of the old house the point of the steel pen was bent and twisted there is a lag between thought and act
 ```
 
+#### Further enhancements:
+
+- Take the live sound input from the microphone and convert speech2text on the go.
+
 ##### PS:  
 
 - Sample rate currently supported is 16000hz
 - If sample rate is higher then script will perform downsampling. This may result in less accurate result.
+
