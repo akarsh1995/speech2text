@@ -32,7 +32,8 @@ Loaded language model in 1.8s.
 Warning: original sample rate (8000) is different than 16000hz. Resampling might produce erratic speech recognition.
 Running inference.
 Inference took 14.607s
-not gently but wake her now the news struck doubt into the restless minds once we stood beside the shore a chunk in the wall allowed a draft to blow fastened two pins on each side the cold dip restores health and zest he takes the oath of office each march the sand drifts over the sill of the old house the point of the steel pen was bent and twisted there is a lag between thought and act
+
+output (from sample.wav): not gently but wake her now the news struck doubt into the restless minds once we stood beside the shore a chunk in the wall allowed a draft to blow fastened two pins on each side the cold dip restores health and zest he takes the oath of office each march the sand drifts over the sill of the old house the point of the steel pen was bent and twisted there is a lag between thought and act
 ```
 
 #### Further enhancements:
